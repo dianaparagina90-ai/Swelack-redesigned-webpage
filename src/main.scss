@@ -6,4 +6,7 @@
 @use "./layout/footer" as *;
 @use "./layout/main-body" as *;
 @use "./components/buttons" as *;
+@use "./abstracts/mixins" as *;
+
+@include mobile;
 

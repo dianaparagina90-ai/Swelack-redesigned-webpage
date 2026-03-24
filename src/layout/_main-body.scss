@@ -8,14 +8,11 @@ main{
 
 .grid{
     @include grid;
-    @include mobile;
 }
 
 .container{
     max-width: 1100px;
     margin: 0 auto;
-
-    @include mobile;
 }
 
 .card{
@@ -26,7 +23,6 @@ main{
 }
 .partners-grid{
     @include flex(space-between, row);
-    @include mobile;
 }
 
 .cta {
