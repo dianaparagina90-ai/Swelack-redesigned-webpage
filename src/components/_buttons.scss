@@ -1,0 +1,9 @@
+@use "../abstracts/mixins" as *;
+
+.btn-primary{
+    @include primary-btn;
+}
+
+.btn-secondary{
+    @include secondary-btn;
+}

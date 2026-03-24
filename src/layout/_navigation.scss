@@ -1,0 +1,11 @@
+@use "../abstracts/mixins" as *;
+
+.navbar {
+    @include flex(space-between, row);
+        
+    ul{
+        list-style: none;
+        @include flex(space-between, row);
+        
+    }
+}

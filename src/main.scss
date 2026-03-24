@@ -1,4 +1,9 @@
 @use "./base/reset" as *;
 @use "./base/typography" as *;
-@use "./abstracts/variables" as *;
+@use "./components/carousel" as *;
+@use "./layout/navigation" as *;
+@use "./layout/header" as *;
+@use "./layout/footer" as *;
+@use "./layout/main-body" as *;
+@use "./components/buttons" as *;
 

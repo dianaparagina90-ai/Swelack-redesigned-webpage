@@ -1,0 +1,32 @@
+@use "./variables" as *;
+
+@mixin flex($justify-content, $direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: center;
+    gap: 20px;
+}
+
+@mixin grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+@mixin primary-btn{
+
+    background: rgb(37, 99, 235);
+    color: $text-color;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+@mixin secondary-btn {
+    margin-left: 10px;
+    color: $text-color;
+    border: 1px solid $text-color;
+    padding: 12px 20px;
+    border-radius: 8px;
+}

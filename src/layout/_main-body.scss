@@ -1,0 +1,36 @@
+@use "../abstracts/mixins" as *;
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.grid{
+    @include grid;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+
+}
+
+.card{
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.partners-grid{
+    @include flex(space-between, row)
+}
+
+.cta {
+    @include flex(center, column);
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
+

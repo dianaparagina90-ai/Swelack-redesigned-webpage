@@ -1,0 +1,10 @@
+@use "../abstracts/mixins" as *;
+
+.footer-grid{
+    @include grid;
+
+    div{
+        line-height: 1.6;
+        margin-top: 10px;
+    }
+}
