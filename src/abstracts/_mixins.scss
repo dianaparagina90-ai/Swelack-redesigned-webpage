@@ -30,3 +30,41 @@
     padding: 12px 20px;
     border-radius: 8px;
 }
+
+@mixin mobile {
+    @media(max-width: 768px) {
+        .container{
+            padding: 0 15px;
+
+        }
+
+        .grid{
+            grid-template-columns: 1 fr;
+        }
+
+        .hero-content{
+            h2{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 0.9rem;
+            }
+        }
+
+        .btn-primary, .btn-secondary{
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .partners-grid{
+            flex-direction: column;
+        }
+
+        .footer-grid{
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+        
+    }
+}
