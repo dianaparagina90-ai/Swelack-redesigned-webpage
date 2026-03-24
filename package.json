@@ -1,0 +1,25 @@
+{
+  "name": "redo-me-gammal-sida",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+     "build": "sass src:dist --no-source-map --style=expanded",
+     "watch": "sass src:dist --watch --style=expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dianaparagina90-ai/G-r-om-gammal-sida.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dianaparagina90-ai/G-r-om-gammal-sida/issues"
+  },
+  "homepage": "https://github.com/dianaparagina90-ai/G-r-om-gammal-sida#readme",
+  "dependencies": {
+    "sass": "^1.98.0"
+  }
+}
