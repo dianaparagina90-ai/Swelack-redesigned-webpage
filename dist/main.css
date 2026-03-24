@@ -67,6 +67,14 @@ h1, h2, h3, h4 {
   gap: 20px;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 .header {
   margin: 0 auto;
   background: white;
@@ -147,11 +155,30 @@ main {
 }
 
 @media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+  .navbar.active ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 15px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    min-width: 180px;
+  }
+  .menu-toggle {
+    display: block;
+  }
   .container {
     padding: 0 15px;
   }
   .grid {
-    grid-template-columns: 1 fr;
+    grid-template-columns: 1fr;
   }
   .hero-content h2 {
     font-size: 2rem;
