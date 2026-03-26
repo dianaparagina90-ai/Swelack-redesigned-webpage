@@ -63,7 +63,12 @@ btn.addEventListener("click", (e)=>{
 
     const submitBtn = document.createElement("button");
     submitBtn.textContent ="Skicka";
-    submitBtn.type="submit";
+    submitBtn.type="button";
+
+    submitBtn.addEventListener("click", (e)=>{
+        alert("Tack!Vi återkommer.")
+        closeModal()
+    });
 
     const closeButton = document.createElement("button");
         closeButton.textContent = "Stäng";
@@ -76,11 +81,7 @@ btn.addEventListener("click", (e)=>{
    
     form.append(nameLabel, emailLabel, descriptionLabel, actions);
     
-    form.addEventListener("submit", (e)=>{
-        e.preventDefault();
-        alert("Tack!Vi återkommer.")
-        closeModal()
-    });
+    
     
     offertBox.append(closeBtn,form);
 });
