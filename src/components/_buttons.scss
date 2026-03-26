@@ -7,3 +7,32 @@
 .btn-secondary{
     @include secondary-btn;
 }
+
+.modal-actions{
+    @include flex(space-between, row);
+
+    button{
+        flex: 1;
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+}
+
+.submit-btn{
+    background: rgb(37, 99, 235);
+    color: rgb(255, 255, 255);
+}
+
+.close-btn{
+    background: rgb(238, 238, 238);
+}
+
+.modal-close-x{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
